@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  height: 100vh;
+  background-image: url("img/pozadina.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.najboljaRjesenja {
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 120px;
+  font-size: 3rem;
+  color: #f1f1f1;
+}
+.husein {
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 120px;
+  font-size: 3.5rem;
+  color: #f1f1f1;
+}
+.najboljaRjesenja:hover {
+  color: #f7e623;
+}
+.husein:hover {
+  color: #f7e623;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-link:hover {
+  cursor: pointer;
+  color: #f7e623 !important;
+}
+.osnovneInformacije {
+  height: 35vh;
+  background-color: #3d3f4c;
+  text-align: center;
+  display: inline-block;
+}
+.h3osnovneInformacije {
+  color: #f7e623 !important;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+.pOsnovneInformacije {
+  color: #f7e623;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+.uslugeKojeObavljamo {
+  height: 80vh;
+}
+.nUsluge {
+  text-align: center;
+  padding: 30px;
+}
+.card {
+  background-color: hsl(240, 20%, 95%);
+}
+/* 4 sekcija, uspješno obavljeni poslovi */
+.bojaPozadinezaOstvareneProjekte {
+  background-color: #3d3f4c;
+  height: 30vh;
+  position: relative;
+}
+.bojaPozadinezaOstvareneProjekte .projektiIreference {
+  display: flex;
+  color: #f7e623;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Početne slike na ekranu prikaz, za modal*/
+.naslovGalerije {
+  padding: 30px;
+}
+.galerijaSlika {
+  height: 82vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.modalPrikazPocetnihSlika {
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+}
+
+.row > .column {
+  padding: 10 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(59, 59, 59, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px; /*prilagoditi za md, sm,xs*/
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 85px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  margin-bottom: -25px;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Partneri*/
+.partneriGlavi {
+  height: 60vh;
+  padding-top: 80px;
+  margin-top: 8rem;
+}
+.naslovPartneri {
+  text-align: center;
+}
+.slikeGalerijeLogo {
+  padding-top: 20px;
+  justify-content: space-evenly;
+  opacity: 0.6;
+}
+.slikeGalerijeLogo:hover {
+  opacity: 1;
+}
+/*7 sekcija, lokacija*/
+.kontaktPozadina {
+  position: relative;
+  margin-left: -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+}
+.kontaktInformacije {
+  position: absolute;
+  background-color: #f1f1f1;
+  margin-left: 200px;
+  margin-top: -450px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.kontaktInformacije:hover {
+  opacity: 1;
+}
+/* Footer */
+.footer {
+  background-color: #3d3f4c;
+  color: #f7e623;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* To top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #315dd8;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+}
+
+#myBtn:hover {
+  opacity: 0.8;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .najboljaRjesenja {
+    margin-top: 350px;
+    margin-left: 80px;
+    font-size: 1rem;
+  }
+  .husein {
+    margin-top: 380px;
+    margin-left: 80px;
+    font-size: 1.2rem;
+  }
+  .osnovneInformacije {
+    height: 40vh;
+  }
+  .h3osnovneInformacije {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  .pOsnovneInformacije {
+    font-size: 1rem;
+  }
+  .uslugeKojeObavljamo {
+    height: 100%;
+  }
+  .projektiIreference {
+    font-size: 7px !important;
+    margin-left: -30px !important;
+  }
+  .modalPrikazPocetnihSlika {
+    padding: 0px;
+    margin: 5px;
+  }
+  .modalPrikazPocetnihSlika h3 h4 {
+    padding: 10px;
+  }
+  .partneriGlavi {
+    display: inline-flexbox;
+    height: 100%;
+    margin-top: -290px !important;
+  }
+  .naslovPartneri {
+    font-size: 20px;
+  }
+  .kontaktPozadina {
+    margin-top: 100px !important;
+  }
+  .kontaktInformacije {
+    margin-left: 85px;
+    width: 75%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .partneriGlavi {
+    margin-top: -420px !important;
+  }
+}
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ...;
+}
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ...;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+} */
